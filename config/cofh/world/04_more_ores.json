@@ -1,0 +1,273 @@
+{
+"populate": {
+"copper_discs": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "plate",
+                "height": 1,
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "copper"
+					}
+				},
+				"material": "minecraft:stone",
+				"radius": 3
+			},
+			"cluster-count": 1,
+            "chunk-chance": 19,
+			"min-height": 9,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "tin_discs": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "plate",
+                "height": 1,
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "tin"
+					}
+				},
+				"material": "minecraft:stone",
+				"radius": 4
+			},
+			"cluster-count": 1,
+            "chunk-chance": 23,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "iron_discs": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "plate",
+                "height": 1,
+				"block": "minecraft:iron_ore",
+				"material": "minecraft:stone",
+				"radius": 4
+			},
+			"cluster-count": 2,
+            "chunk-chance": 25,
+			"min-height": 7,
+			"max-height": 60,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "tetrahydrite": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "height": 1,
+				"block": [
+                    {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "copper"
+					},
+                    "weight": 75
+                    },
+                    {
+	                "name": "minecraft:gold_ore",
+                    "weight": 25
+                    }
+                ],
+				"material": "minecraft:stone",
+                "cluster-size": 40
+			},
+			"cluster-count": 3,
+            "chunk-chance": 10,
+			"min-height": 7,
+			"max-height": 63,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "bauxite": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "height": 1,
+				"block": [
+                    {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "tin"
+					},
+                    "weight": 35
+                    },
+                    {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "aluminum"
+					},
+                    "weight": 65
+                    }
+                ],
+				"material": "minecraft:stone",
+                "cluster-size": 20
+			},
+			"cluster-count": 2,
+            "chunk-chance": 7,
+			"min-height": 7,
+			"max-height": 63,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "quartz": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "height": 1,
+				"block": [
+                    {
+					"name": "actuallyadditions:block_misc",
+					"properties": {
+						"type": "ore_black_quartz"
+					},
+                    "weight": 10
+                    },
+                    {
+					"name": "thaumcraft:ore_quartz",
+                    "weight": 45
+                    },
+                    {
+					"name": "appliedenergistics2:quartz_ore",
+                    "weight": 44
+                    },
+                    {
+					"name": "appliedenergistics2:charged_quartz_ore",
+                    "weight": 1
+                    }
+                ],
+				"material": "minecraft:stone",
+                "cluster-size": 16
+			},
+			"cluster-count": 1,
+            "chunk-chance": 6,
+			"min-height": 7,
+			"max-height": 40,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "graphite": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "height": 1,
+				"block": [
+                    {
+					"name": "minecraft:diamond_ore",
+                    "weight": 2
+                    },
+                    {
+					"name": "minecraft:coal_ore",
+                    "weight": 98
+                    }
+                ],
+				"material": "minecraft:stone",
+                "cluster-size": 32
+			},
+			"cluster-count": 1,
+            "chunk-chance": 3,
+			"min-height": 2,
+			"max-height": 16,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "redstone": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "height": 1,
+				"block": [
+                    {
+					"name": "thermalfoundation:ore_fluid",
+					"properties": {
+						"type": "redstone"
+					},
+                    "weight": 4
+                    },
+                    {
+					"name": "minecraft:redstone_ore",
+                    "weight": 94
+                    },
+                    {
+					"name": "thaumcraft:ore_cinnabar",
+                    "weight": 2
+                    }
+                ],
+				"material": "minecraft:stone",
+                "cluster-size": 16
+			},
+			"cluster-count": 2,
+            "chunk-chance": 6,
+			"min-height": 1,
+			"max-height": 30,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+}
+}
